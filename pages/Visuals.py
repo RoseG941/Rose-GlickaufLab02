@@ -1,11 +1,18 @@
+# This creates the page for displaying data visualizations.
+
+import streamlit as st
+import json
+import pandas as pd
+import altair as alt
+
+# PAGE CONFIGURATION
+st.set_page_config(page_title="Visuals")
+
 # PAGE TITLE
 st.title("Data Visualizations")
 
 # PART 1: GRAPHS FROM data.json
-import streamlit as st
-import pandas as pd
-import altair as alt
-import json
+
 infile=open("data.json")
 data=json.load(infile)
 infile.close()
