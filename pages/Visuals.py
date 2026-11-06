@@ -2,7 +2,10 @@
 st.title("Data Visualizations")
 
 # PART 1: GRAPHS FROM data.json
-
+import streamlit as st
+import pandas as pd
+import altair as alt
+import json
 infile=open("data.json")
 data=json.load(infile)
 infile.close()
